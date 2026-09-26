@@ -3,7 +3,6 @@ from pathlib import Path
 
 from swe_harness.cli import main
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 EXAMPLE_TASK = (
     PROJECT_ROOT
