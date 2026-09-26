@@ -1,0 +1,22 @@
+{
+  "name": "Collapse repeated whitespace in slugify",
+  "repo_path": "repo",
+  "patch_path": "solution.patch",
+  "baseline_command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests/test_slugify.py",
+    "-q"
+  ],
+  "verification_commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ]
+  ],
+  "expected_baseline_exit_codes": [1],
+  "timeout_seconds": 30
+}
