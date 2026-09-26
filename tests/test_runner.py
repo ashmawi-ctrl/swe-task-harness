@@ -3,7 +3,6 @@ from pathlib import Path
 from swe_harness.runner import evaluate_task, run_command
 from swe_harness.spec import load_task
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 EXAMPLE_TASK = (
     PROJECT_ROOT
