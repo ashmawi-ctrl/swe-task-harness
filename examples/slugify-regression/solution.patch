@@ -1,0 +1,12 @@
+diff --git a/string_utils.py b/string_utils.py
+--- a/string_utils.py
++++ b/string_utils.py
+@@ -1,3 +1,7 @@
++import re
++
++
+ def slugify(value: str) -> str:
+     """Convert simple text into a lowercase dash-separated slug."""
+-    return value.strip().lower().replace(" ", "-")
++    normalized = value.strip().lower()
++    return re.sub(r"\s+", "-", normalized)
